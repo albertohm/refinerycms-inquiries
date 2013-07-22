@@ -4,8 +4,10 @@ module Refinery
 
     config_accessor :show_contact_privacy_link
     config_accessor :send_notifications_for_inquiries_marked_as_spam
+    config_accessor :from_name
 
     self.show_contact_privacy_link = true
     self.send_notifications_for_inquiries_marked_as_spam = false
+    self.from_name = "no-reply"
   end
 end
